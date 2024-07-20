@@ -1,0 +1,86 @@
+@import url("./normalize.css");
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #151318;
+    color: #ffffff;
+    gap: 50px;
+    text-align: center;
+
+}
+
+#container{
+    display: flex;
+    background-color: #c8c2c246;
+    gap: 100px;
+    border-radius: 25px;
+}
+
+.sectionContainer{
+    padding: 40px;
+}
+
+#regForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchForm{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+
+#searchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn{
+    background-color: #ffffff;
+    color: #151318;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: #ffffff26;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+label{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+table td, th{
+    padding: 15px;
+}
+
+
+h1{
+    color: #ffffff;
+    font-size: 40px;
+    margin: 30px;
+}
+
+h2{
+    padding: 30px;
+}

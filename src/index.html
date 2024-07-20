@@ -3,74 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/CSS/pages/index/index.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <title>Sprint 1</title>
 </head>
 <body>
-    <h1>Sistema de cadastro ficticio</h1>
-    <div class="container">
-        <div class="reg_container">
-            <section id="registration" >
-                <h2>Cadastrar usuario</h2>
-    
-                <form id="registration_form">
-                    <label for="name">Nome:</label>
-                    <input class="text_input" type="text" id="name" required><br><br>
-                    
-                    <label for="phone">Telefone:</label>
-                    <input class="text_input" type="tel" id="phone" required><br><br>
-                    
-                    <label for="email">Email:</label>
-                    <input class="text_input" type="email" id="email" required><br><br>
-        
-                    <label for="dateofbirth">Data de Nascimento:</label>
-                    <input class="text_input" type="date" id="dateofbirth" required><br><br>
-        
-                    <button class="btn" type="submit">Salvar</button>
-                </form>
-            </section>
-        
-        </div>
-        
-        <div class="search_container">
-            <section id="search" >
-                <h2>Buscar usuario</h2>
-                <form id="search_form">
-                    <label for="">Digite para pesquisar:</label>
-                    <input class="text_input" type="text" id="" required><br><br>
-                    <button class="btn" type="submit">Buscar</button>
-                </form>
-            </section>
-    
-            <section id="results">
-                <h2>Resultado da Busca</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Telefone</th>
-                            <th>Email</th>
-                            <th>Data de Nascimento</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Antonio rian</td>
-                            <td>88939654121</td>
-                            <td>antoniorian@exemplo.com</td>
-                            <td>22/08/11</td>
-                            <td><button class="btn"> Excluir</button></td>
-                        </tr>
-                        
-                        
-                        </tr>
-                    </tbody>
-                </table>
-            </section> 
-        </div>
+    <h1>SCFU</h1>
+    <p>Bem vindo ao sistema ficticio de cadastro de usuario(SFCU), abaixo é possivel cadastrar , buscar e deletar usuarios</p>
+    <div id="container">
+        <section class="sectionContainer">
+            <h2>Cadastrar usuario</h2>
 
+            <form id="regForm">
+                <label for="name">Nome:</label>
+                <input class="textInput" type="text" id="name" required><br><br>
+                
+                <label for="phone">Telefone:</label>
+                <input class="textInput" type="tel" id="phone" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input class="textInput" type="email" id="email" required><br><br>
+
+                <label for="dateOfBirth">Data de Nascimento:</label>
+                <input class="textInput" type="date" id="dateOfBirth" required><br><br>
+
+                <button class="btn" id="save" type="submit" >Salvar</button>
+            </form>
+        </section>
+
+        <section class="sectionContainer" id="searchContainer">
+            <h2>Buscar usuario</h2>
+            <form id="searchForm">
+                <label >Digite para pesquisar:</label>
+                <input class="textInput" type="text" id="search" required><br><br>
+                <button class="btn" type="submit" >Buscar</button>
+            </form>
+
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Data de Nascimento</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Antonio rian</td>
+                        <td>88939654121</td>
+                        <td>antoniorian@exemplo.com</td>
+                        <td>22/08/11</td>
+                        <td>jsajdaskj</td>
+                    </tr>
+                    
+                    
+                    </tr>
+                </tbody>
+            </table>
+        </section> 
     </div>
-   
-
+    <script type="module" src="../src/assets/js/main.js"></script>
 </body>
 </html>
