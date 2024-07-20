@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #151318;
+    background-color: #ffffff;
     color: #ffffff;
     gap: 50px;
     text-align: center;
@@ -14,7 +14,7 @@ body{
 
 #container{
     display: flex;
-    background-color: #c8c2c246;
+    background-color: #2d70ad;
     gap: 100px;
     border-radius: 25px;
 }
@@ -43,7 +43,7 @@ body{
     gap: 10px;
 }
 
-.btn{
+button{
     background-color: #ffffff;
     color: #151318;
     border: none;
@@ -54,7 +54,7 @@ body{
     
 }
 
-.btn:hover{
+button:hover{
     background-color: #ffffff26;
 }
 
@@ -76,9 +76,9 @@ table td, th{
 
 
 h1{
-    color: #ffffff;
+    color: #2d70ad;
     font-size: 40px;
-    margin: 30px;
+    margin: 20px;
 }
 
 h2{
