@@ -14,3 +14,50 @@ button{
 button:hover{
     background-color: #ffffff26;
 }
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/*
+a{
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    padding: 8px 23px;
+    border-radius: 5px ;
+}
+*/
+
+.button-link {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;   }
+  
+.button-link a {
+    display: block; 
+    width: 100%;
+    height: 100%;
+    text-decoration: none;     
+    color: inherit;
+}
+  
+.button-link {
+    position: relative;
+}
+  
+.button-link a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+  
