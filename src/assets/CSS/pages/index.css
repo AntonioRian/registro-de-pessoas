@@ -1,0 +1,71 @@
+@import url("./global/normalize.css");
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #ffffff;
+    gap: 50px;
+    text-align: center;
+
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    background-color: #2d70ad;
+    width: 80%;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.sectionContainer{
+    padding: 40px;
+}
+
+#regForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background-color: #ffffff;
+    color: #151318;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: #ffffff26;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+}
+
+label{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+    
+h1{
+    color: #2d70ad;
+    font-size: 40px;
+    margin: 20px 0 0 0;
+}
+
+h2{
+   margin-bottom: 30px;
+   font-size: 30px;
+}
