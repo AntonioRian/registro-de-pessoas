@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/pages/index.css">
     <title>Sprint 1</title>
 </head>
 <body>
-    <h1>Cadastro de Usuarios</h1>
+    <h1>Cadastro de Usuários</h1>
     <div id="container">
         <section class="sectionContainer">
-            <h2>Cadastrar usuario</h2>
+            <h2>Cadastrar Usuário</h2>
 
             <form id="regForm">
                 <label for="name">Nome:</label>
@@ -23,32 +23,11 @@
                 <input class="textInput" type="date" id="dateOfBirth" required><br><br>
                 <button class="btn" id="save" type="submit" >Salvar</button>
             </form>
+            <button class="btn" id="usersBtn">Usuarios</button>
+           
         </section>
-
-        <section class="sectionContainer" id="searchContainer">
-            <h2>Buscar usuario</h2>
-            <form id="searchForm">
-                <label >Digite para pesquisar:</label>
-                <input class="textInput" type="text" id="search" required><br><br>
-                <button class="btn" type="submit" >Buscar</button>
-            </form>
-
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Telefone</th>
-                        <th>Email</th>
-                        <th>Data de Nascimento</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
     
-                </tbody>
-            </table>
-        </section> 
+
     </div>
     <script type="module" src="../src/assets/js/main.js"></script>
 </body>
