@@ -21,9 +21,6 @@ body{
     border-radius: 25px;
 }
 
-.sectionContainer{
-    padding: 40px;
-}
 
 #regForm{
     display: flex;
@@ -41,7 +38,7 @@ h1{
 }
 
 h2{
-   margin-bottom: 30px;
-   font-size: 30px;
-}
-
+    margin: 40px 0;
+    font-size: 30px;
+ }
+ 

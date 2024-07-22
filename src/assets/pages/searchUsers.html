@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/pages/searchUsers.css">
-    <title>Document</title>
+    <title>Users</title>
 </head>
 <body>
 
@@ -14,17 +14,17 @@
     <div id="container">
     
         <section class="sectionContainer" id="searchContainer">
-            <h2>Buscar Usuário</h2>
+            <h2>Pesquise o usuário abaixo</h2>
             <form id="searchForm">
-                <label >Digite para pesquisar:</label>
-                <input class="textInput" type="text" id="search" required><br><br>
+                
+                <input class="textInput" type="text" id="search" placeholder="Digite algo para pesquisar"><br><br>
                 <div class="btnContainer">
                     <button  type="submit" >Buscar</button>
-                    <button >Limpar</button>
+                    <button onclick="loadUsers()">Limpar</button>
                     <button class="button-link"><a href="../../index.html">Voltar</a></button>
                 </div>
             </form>
-        
+       
             
             <table>
                 <thead>
