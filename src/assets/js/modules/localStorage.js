@@ -1,4 +1,4 @@
-export function register(user) {
+export function registerUser(user) {
     const users = JSON.parse(localStorage.getItem('users')) || [];
     
     if (users.some(u => u.email === user.email)) {
@@ -22,7 +22,7 @@ export function loadUsers() {
     tbody.innerHTML = '';
   
     users.forEach(user => {
-        const tr = createTableRow(user);
+        const tr = createTable(user);
         tbody.appendChild(tr);
       });
   
@@ -30,7 +30,7 @@ export function loadUsers() {
       button.addEventListener('click', (event) => {
         const email = event.target.dataset.email;
         deleteUser(email);
-        renderUsers();
+        loadUsers();
       });
     });
 }
@@ -42,7 +42,7 @@ export function createTable(user) {
       <td>${user.phone}</td>
       <td>${user.email}</td>
       <td>${user.dateOfBirth.split("-").reverse().join("/")}</td>
-      <td><button class="delete-btn" data-email="${user.email}">Delete</button></td>
+      <td><button class="delete-btn" data-email="${user.email}">Excluir</button></td>
     `;
     return tr;
   }
