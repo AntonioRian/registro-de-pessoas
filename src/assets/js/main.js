@@ -15,6 +15,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 const email = form.email.value;
                 const dateOfBirth = form.dateOfBirth.value;
 
+                if (typeof name !== 'string' || name.trim() === '') {
+                    alert('Nome inválido. Deve ser um texto não vazio.');
+                    return;
+                }
+        
+                if (typeof phone !== 'string' || !/^\d{10,11}$/.test(phone)) { 
+                    alert('Telefone inválido, digite sem espaços e caracteres especiais. Exemplo: 11999999999');
+                    return;
+                }
+        
+        
+        
+                if (typeof email !== 'string' || !/\S+@\S+\.\S+/.test(email)) { 
+                    alert('Email inválido.');
+                    return;
+                }
+        
+                if (typeof dateOfBirth !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(dateOfBirth)) { 
+                    alert('Data de nascimento inválida.');
+                    return;
+                }
+        
+
                 let user = UserFactory.createUser(name, phone, email, dateOfBirth);
                 registerUser(user);
 
