@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             searchForm.addEventListener("submit", (event) => {
                 event.preventDefault();
 
+                //filtrar usuários
                 const searchTerm = searchForm.search.value.toLowerCase();
                 const users = JSON.parse(localStorage.getItem('users')) || [];
                 const filteredUsers = users.filter(user =>
@@ -47,11 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 const tbody = document.querySelector('tbody');
                 tbody.innerHTML = '';
 
+                //criar tabela com os usuários filtrados
                 filteredUsers.forEach(user => {
                     const tr = createTable(user);
                     tbody.appendChild(tr);
                 });
 
+                //limpar busca
                 const cleanSearch = document.getElementById('cleanSearch');
                 cleanSearch.addEventListener('click', () => {
                     searchForm.reset();

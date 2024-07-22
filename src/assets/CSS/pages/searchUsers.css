@@ -36,8 +36,16 @@ body{
     
 }
 
+table{
+    width: 100%;
+}
 table td, th{
     padding: 30px;
+}
+
+.table-container {
+    max-height: 400px; 
+    overflow-y: auto; 
 }
 
 
