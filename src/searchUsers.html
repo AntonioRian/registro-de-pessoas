@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/pages/searchUsers.css">
+    <link rel="stylesheet" href="./assets/CSS/pages/searchUsers.css">
     <title>Users</title>
 </head>
 <body>
@@ -20,8 +20,8 @@
                 <input class="textInput" type="text" id="search" placeholder="Digite algo para pesquisar"><br><br>
                 <div class="btnContainer">
                     <button  type="submit" >Buscar</button>
-                    <button onclick="loadUsers()">Limpar</button>
-                    <button class="button-link"><a href="../../index.html">Voltar</a></button>
+                    <button id="cleanSearch">Limpar</button>
+                    <button class="button-link"><a href="index.html">Voltar</a></button>
                 </div>
             </form>
        
@@ -42,6 +42,6 @@
             </table>
         </section> 
     </div>
-    <script type="module" src="../src/assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
