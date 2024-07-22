@@ -51,7 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
                     const tr = createTable(user);
                     tbody.appendChild(tr);
                 });
+
+                const cleanSearch = document.getElementById('cleanSearch');
+                cleanSearch.addEventListener('click', () => {
+                    searchForm.reset();
+                    loadUsers();
+                });
+                
             });
+            
         }
+
+        
     }
 });
